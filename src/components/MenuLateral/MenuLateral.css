@@ -1,0 +1,27 @@
+.menuLateral-root {
+    display: flex;
+  }
+  
+  .menuLateral-drawer {
+    width: 240px;
+    flex-shrink: 0;
+  }
+  
+  .menuLateral-drawerPaper {
+    width: 240px;
+    box-sizing: border-box;
+  }
+  
+  .menuLateral-menuButton {
+    margin-right: 16px;
+  }
+  
+  .selected {
+    background-color: #1976d2 !important;
+    color: white;
+  }
+  
+  .selected .MuiListItemIcon-root,
+  .selected .MuiListItemText-primary {
+    color: white !important;
+  }  

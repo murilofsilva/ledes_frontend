@@ -4,6 +4,8 @@ import LoginForm from './components/LoginForm/LoginForm';
 import ProtectedRoute from './auth/ProtectedRoute';
 import { AuthProvider } from './auth/AuthContext';
 import ProcessosListagem from './components/ProcessosListagem/ProcessosListagem';
+import ProcessosVisualizacao from './components/ProcessosVisualizacao/ProcessosVisualizacao';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
           <Route path="/login" element={<LoginForm />} />
           <Route element={<ProtectedRoute />}>
             <Route path="/main" element={<ProcessosListagem />} />
+            <Route path="/processos/:id" element={<ProcessosVisualizacao />} />
           </Route>
         </Routes>
       </Router>
