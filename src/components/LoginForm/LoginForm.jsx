@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './LoginForm.css';
-import loginService from '../../services/LoginService';
+import loginService from '../../services/loginService';
 import { useAuth } from '../../auth/AuthContext';
 import loginImage from '../../assets/pge_login_image.jpeg';
 

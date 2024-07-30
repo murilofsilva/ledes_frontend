@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Timeline from '../Timeline/Timeline';
+import Timeline from '../timeline/Timeline';
 import './MovimentacoesListagem.css';
 
 const MovimentacoesListagem = ({ movimentacoes: initialMovimentacoes }) => {

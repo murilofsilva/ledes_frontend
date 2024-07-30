@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGavel, faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
-import MovimentacoesModal from '../MovimentacoesModal/MovimentacoesModal';
+import MovimentacoesModal from '../movimentacoesModal/MovimentacoesModal';
 import './Timeline.css';
 
 const Timeline = ({ items = [], onEdit, onDelete }) => {

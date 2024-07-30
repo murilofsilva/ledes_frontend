@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import MovimentacoesListagem from '../MovimentacoesListagem/MovimentacoesListagem';
-import ProcessoDetalhes from '../ProcessoDetalhes/ProcessoDetalhes';
+import MovimentacoesListagem from '../movimentacoesListagem/MovimentacoesListagem';
+import ProcessoDetalhes from '../processoDetalhes/ProcessoDetalhes';
 import ProcessosService from '../../services/processosService';
 import './ProcessosVisualizacao.css';
 
