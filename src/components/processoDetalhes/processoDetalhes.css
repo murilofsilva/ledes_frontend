@@ -1,0 +1,8 @@
+.processo-detalhes {
+    overflow-y: auto;
+    height: 100%;
+  }
+  
+  .processo-detalhes p {
+    margin: 10px 0;
+  }  

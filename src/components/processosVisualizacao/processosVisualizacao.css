@@ -1,0 +1,16 @@
+.processo-visualizacao-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.movimentacoes-listagem-container {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+}
+
+.processo-detalhes-container {
+  flex: 1;
+  padding: 20px;
+}
