@@ -14,4 +14,18 @@ const getProcessos = async (filter = '') => {
   }
 };
 
-export default { getProcessos };
+const getProcessoById = async (id) => {
+  try {
+    const response = await fetch(`${API_URL}/${id}`);
+    if (!response.ok) {
+      throw new Error('API retornou status negativo. Verificar com o suporte.');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Erro ao buscar processo por ID:', error);
+    return null;
+  }
+};
+
+export default { getProcessos, getProcessoById };
