@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import MovimentacoesListagem from '../movimentacoesListagem/MovimentacoesListagem';
 import ProcessoDetalhes from '../processoDetalhes/ProcessoDetalhes';
 import ProcessosService from '../../services/processosService';
-import './ProcessosVisualizacao.css';
+import './processosVisualizacao.css';
 
 const ProcessosVisualizacao = () => {
   const { id } = useParams();

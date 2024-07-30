@@ -2,7 +2,7 @@ import React from 'react';
 import { Table as BootstrapTable, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, Paper } from '@mui/material';
 import { getProcessoHeaderKeys } from '../../utils/tableUtils';
 import { useNavigate } from 'react-router-dom';
-import './Table.css';
+import './table.css';
 
 const Table = ({ headers, rows }) => {
   const headerKeys = getProcessoHeaderKeys(headers);

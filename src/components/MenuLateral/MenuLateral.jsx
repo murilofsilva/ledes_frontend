@@ -3,7 +3,7 @@ import { Box, Drawer, List, ListItem, ListItemIcon, ListItemText, Toolbar, CssBa
 import InboxIcon from '@mui/icons-material/Inbox';
 import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
-import './MenuLateral.css';
+import './menuLateral.css';
 
 const MenuLateral = ({ children }) => {
   const [open, setOpen] = useState(false);

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './MovimentacoesModal.css';
+import './movimentacoesModal.css';
 
 const MovimentacoesModal = ({ isOpen, onClose, onSave, movimentacao }) => {
   const [titulo, setTitulo] = useState('');

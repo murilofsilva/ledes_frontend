@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Timeline from '../timeline/Timeline';
-import './MovimentacoesListagem.css';
+import './movimentacoesListagem.css';
 
 const MovimentacoesListagem = ({ movimentacoes: initialMovimentacoes }) => {
   const [movimentacoes, setMovimentacoes] = useState(initialMovimentacoes);

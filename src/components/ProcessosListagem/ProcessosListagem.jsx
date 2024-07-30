@@ -3,7 +3,7 @@ import { Box, TextField, InputAdornment, IconButton } from '@mui/material';
 import MenuLateral from '../menuLateral/MenuLateral';
 import loginImage from '../../assets/pge_login_image.jpeg';
 import SearchIcon from '@mui/icons-material/Search';
-import './ProcessosListagem.css';
+import './processosListagem.css';
 import Table from '../tabela/Table';
 import ProcessosService from '../../services/processosService';
 

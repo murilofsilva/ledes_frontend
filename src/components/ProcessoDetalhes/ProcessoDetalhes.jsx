@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProcessoDetalhes.css';
+import './processoDetalhes.css';
 
 const ProcessoDetalhes = ({ processo }) => {
   return (
