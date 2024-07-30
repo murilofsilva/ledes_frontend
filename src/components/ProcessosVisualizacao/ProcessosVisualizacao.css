@@ -1,11 +1,16 @@
 .processo-visualizacao-container {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  .processo-visualizacao-container h1 {
-    margin-bottom: 20px;
-  }  
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.movimentacoes-listagem-container {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+}
+
+.processo-detalhes-container {
+  flex: 1;
+  padding: 20px;
+}

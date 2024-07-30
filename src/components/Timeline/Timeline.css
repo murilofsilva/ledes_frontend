@@ -1,0 +1,95 @@
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 150%;
+  overflow-y: auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 22px;
+  width: 4px;
+  height: 100%;
+  background: #007bff;
+  z-index: -1;
+}
+
+.timeline-content {
+  flex: 1;
+  padding: 15px;
+  border-radius: 4px;
+  background: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content p.title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.timeline-content p.description {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  color: #555;
+}
+
+.timeline-content span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-marker {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 3px;
+  transition: background 0.3s;
+}
+
+.timeline-marker.highlighted {
+  background: #0056b3;
+}
+
+.edit-button,
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-button {
+  margin-left: 10px;
+  color: #007bff;
+}
+
+.delete-button {
+  color: #ff4d4d;
+}
