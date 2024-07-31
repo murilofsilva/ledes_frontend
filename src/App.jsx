@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import LoginForm from './components/loginForm/LoginForm';
 import ProtectedRoute from './auth/ProtectedRoute';
 import { AuthProvider } from './auth/AuthContext';
@@ -17,6 +17,7 @@ function App() {
             <Route path="/main" element={<ProcessosListagem />} />
             <Route path="/processos/:id" element={<ProcessosVisualizacao />} />
           </Route>
+          <Route path="*" element={<Navigate to="/main" />} />
         </Routes>
       </Router>
     </AuthProvider>
