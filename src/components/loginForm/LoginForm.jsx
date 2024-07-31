@@ -20,7 +20,7 @@ const LoginForm = () => {
       const response = await loginService.login(email, password);
       console.log('Login successful:', response);
       login();
-      navigate('/main');
+      navigate('/processos');
     } catch (error) {
       toast.error(error.response?.data?.message || 'Failed to login. Please check your email and password.');
     }

@@ -14,10 +14,10 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginForm />} />
           <Route element={<ProtectedRoute />}>
-            <Route path="/main" element={<ProcessosListagem />} />
+            <Route path="/processos" element={<ProcessosListagem />} />
             <Route path="/processos/:id" element={<ProcessosVisualizacao />} />
           </Route>
-          <Route path="*" element={<Navigate to="/main" />} />
+          <Route path="*" element={<Navigate to="/processos" />} />
         </Routes>
       </Router>
     </AuthProvider>

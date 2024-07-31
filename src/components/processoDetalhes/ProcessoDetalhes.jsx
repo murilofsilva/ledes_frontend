@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const ProcessoDetalhes = ({ processo }) => {
   const [isValidating, setIsValidating] = useState(false);
-  const [validado, setValidado] = useState(processo.dataPrescricaoValidada);
+  const [validado, setValidado] = useState(false);
   const [showTextarea, setShowTextarea] = useState(false);
   const [textareaValue, setTextareaValue] = useState(processo.documento ? processo.documento.conteudo : '');
   const [isModified, setIsModified] = useState(false);
@@ -73,7 +73,7 @@ const ProcessoDetalhes = ({ processo }) => {
           <p><strong>Nome do Executado:</strong> {processo.nomeExecutado}</p>
         </div>
       </div>
-      {showTextarea ? (
+      {showTextarea || validado ? (
         <div>
           <textarea
             className="validar-textarea"
